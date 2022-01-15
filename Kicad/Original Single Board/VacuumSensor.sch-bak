@@ -1,0 +1,1217 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR018
+U 1 1 6061536F
+P 11250 4300
+F 0 "#PWR018" H 11250 4050 50  0001 C CNN
+F 1 "GND" H 11255 4127 50  0000 C CNN
+F 2 "" H 11250 4300 50  0001 C CNN
+F 3 "" H 11250 4300 50  0001 C CNN
+	1    11250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:24PCDFA6D IC2
+U 1 1 60732DAC
+P 8000 2500
+F 0 "IC2" H 8928 2396 50  0000 L CNN
+F 1 "24PCDFA6D" H 8928 2305 50  0000 L CNN
+F 2 "SamacSys_Parts:24PCDFA6D" H 8950 2600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/24PCDFA6D.pdf" H 8950 2500 50  0001 L CNN
+F 4 "Board Mount Pressure Sensors +/-30psi 10V WET-WET DIFF/Gage/Vac Gage" H 8950 2400 50  0001 L CNN "Description"
+F 5 "8" H 8950 2300 50  0001 L CNN "Height"
+F 6 "785-24PCDFA6D" H 8950 2200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Honeywell/24PCDFA6D?qs=pLJKYPamQJx%252B0ilU11tjNg%3D%3D" H 8950 2100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Honeywell" H 8950 2000 50  0001 L CNN "Manufacturer_Name"
+F 9 "24PCDFA6D" H 8950 1900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2700 8000 2700
+Wire Wire Line
+	8000 2500 7550 2500
+Wire Wire Line
+	7550 2500 7550 3900
+$Comp
+L power:GND #PWR017
+U 1 1 60734B52
+P 7800 2600
+F 0 "#PWR017" H 7800 2350 50  0001 C CNN
+F 1 "GND" H 7805 2427 50  0000 C CNN
+F 2 "" H 7800 2600 50  0001 C CNN
+F 3 "" H 7800 2600 50  0001 C CNN
+	1    7800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2600 8000 2600
+$Comp
+L pspice:CAP C7
+U 1 1 60737A09
+P 11900 4200
+F 0 "C7" H 12078 4246 50  0000 L CNN
+F 1 "100nF" H 12078 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11900 4200 50  0001 C CNN
+F 3 "~" H 11900 4200 50  0001 C CNN
+	1    11900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 6073860E
+P 11900 4550
+F 0 "#PWR024" H 11900 4300 50  0001 C CNN
+F 1 "GND" H 11905 4377 50  0000 C CNN
+F 2 "" H 11900 4550 50  0001 C CNN
+F 3 "" H 11900 4550 50  0001 C CNN
+	1    11900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Reference_Voltage:TL431LP U1
+U 1 1 60751131
+P 1250 5400
+F 0 "U1" V 1296 5330 50  0000 R CNN
+F 1 "TL431LP" V 1205 5330 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1250 5250 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1250 5400 50  0001 C CIN
+	1    1250 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 6075274A
+P 1250 5850
+F 0 "#PWR06" H 1250 5600 50  0001 C CNN
+F 1 "GND" H 1255 5677 50  0000 C CNN
+F 2 "" H 1250 5850 50  0001 C CNN
+F 3 "" H 1250 5850 50  0001 C CNN
+	1    1250 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US 5VADJ1
+U 1 1 60752E02
+P 850 5400
+F 0 "5VADJ1" H 783 5446 50  0000 R CNN
+F 1 "20k" H 783 5355 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical" H 850 5400 50  0001 C CNN
+F 3 "~" H 850 5400 50  0001 C CNN
+	1    850  5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 6075457A
+P 1250 4950
+F 0 "R2" H 1318 4996 50  0000 L CNN
+F 1 "1k" H 1318 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1250 4950 50  0001 C CNN
+F 3 "~" H 1250 4950 50  0001 C CNN
+	1    1250 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5050 1250 5150
+Wire Wire Line
+	1150 5400 1000 5400
+Wire Wire Line
+	850  5250 850  5150
+Wire Wire Line
+	850  5150 1250 5150
+Connection ~ 1250 5150
+Wire Wire Line
+	1250 5150 1250 5300
+Wire Wire Line
+	1250 5500 1250 5700
+Wire Wire Line
+	850  5550 850  5700
+Wire Wire Line
+	850  5700 1250 5700
+Connection ~ 1250 5700
+Wire Wire Line
+	1250 5700 1250 5850
+$Comp
+L power:GND #PWR025
+U 1 1 607589D8
+P 8600 5900
+F 0 "#PWR025" H 8600 5650 50  0001 C CNN
+F 1 "GND" H 8605 5727 50  0000 C CNN
+F 2 "" H 8600 5900 50  0001 C CNN
+F 3 "" H 8600 5900 50  0001 C CNN
+	1    8600 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5750 8600 5900
+NoConn ~ 8600 5450
+$Comp
+L power:GND #PWR026
+U 1 1 6075A6B7
+P 11000 5650
+F 0 "#PWR026" H 11000 5400 50  0001 C CNN
+F 1 "GND" H 11005 5477 50  0000 C CNN
+F 2 "" H 11000 5650 50  0001 C CNN
+F 3 "" H 11000 5650 50  0001 C CNN
+	1    11000 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8600 5550 8200 5550
+Wire Wire Line
+	8200 5550 8200 6350
+$Comp
+L Device:CP C3
+U 1 1 6075DEBE
+P 1750 5400
+F 0 "C3" H 1928 5446 50  0000 L CNN
+F 1 "1uF" H 1928 5355 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1750 5400 50  0001 C CNN
+F 3 "~" H 1750 5400 50  0001 C CNN
+	1    1750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Reference_Voltage:TL431LP U2
+U 1 1 6077D48C
+P 7450 5900
+F 0 "U2" V 7496 5830 50  0000 R CNN
+F 1 "TL431LP" V 7405 5830 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 5750 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 7450 5900 50  0001 C CIN
+	1    7450 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 6077D492
+P 7450 6350
+F 0 "#PWR020" H 7450 6100 50  0001 C CNN
+F 1 "GND" H 7455 6177 50  0000 C CNN
+F 2 "" H 7450 6350 50  0001 C CNN
+F 3 "" H 7450 6350 50  0001 C CNN
+	1    7450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 6077D49E
+P 7450 5450
+F 0 "R3" H 7518 5496 50  0000 L CNN
+F 1 "1k" H 7518 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7450 5450 50  0001 C CNN
+F 3 "~" H 7450 5450 50  0001 C CNN
+	1    7450 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5550 7450 5650
+Wire Wire Line
+	7050 5650 7450 5650
+Connection ~ 7450 5650
+Wire Wire Line
+	7450 5650 7450 5800
+Wire Wire Line
+	11250 4000 11450 4000
+Wire Wire Line
+	7550 3900 10150 3900
+Wire Wire Line
+	10150 4200 7600 4200
+Wire Wire Line
+	7600 2700 7600 4200
+$Comp
+L SamacSys_Parts:INA849DR IC3
+U 1 1 607E4640
+P 10150 3900
+F 0 "IC3" H 10700 4165 50  0000 C CNN
+F 1 "INA849DR" H 10700 4074 50  0000 C CNN
+F 2 "SamacSys_Parts:SOIC127P600X175-8N" H 11100 4000 50  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/ina849.pdf?ts=1609495728489&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA849" H 11100 3900 50  0001 L CNN
+F 4 "Texas Instruments Ultra-low noise (1 nV/vHz), high-speed (28 MHz, 35 V/), precision (35 V) instrumentation amplifier" H 11100 3800 50  0001 L CNN "Description"
+F 5 "1.75" H 11100 3700 50  0001 L CNN "Height"
+F 6 "595-INA849DR" H 11100 3600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA849DR?qs=eP2BKZSCXI4qgDpsz1tg9g%3D%3D" H 11100 3500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 11100 3400 50  0001 L CNN "Manufacturer_Name"
+F 9 "INA849DR" H 11100 3300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 4200 11250 4300
+$Comp
+L power:+10V #PWR016
+U 1 1 609F4EE4
+P 7250 2450
+F 0 "#PWR016" H 7250 2300 50  0001 C CNN
+F 1 "+10V" H 7265 2623 50  0000 C CNN
+F 2 "" H 7250 2450 50  0001 C CNN
+F 3 "" H 7250 2450 50  0001 C CNN
+	1    7250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR05
+U 1 1 60A00170
+P 1250 4450
+F 0 "#PWR05" H 1250 4300 50  0001 C CNN
+F 1 "+10V" H 1265 4623 50  0000 C CNN
+F 2 "" H 1250 4450 50  0001 C CNN
+F 3 "" H 1250 4450 50  0001 C CNN
+	1    1250 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4450 1250 4850
+$Comp
+L power:+10V #PWR019
+U 1 1 60A184AB
+P 7450 5200
+F 0 "#PWR019" H 7450 5050 50  0001 C CNN
+F 1 "+10V" H 7465 5373 50  0000 C CNN
+F 2 "" H 7450 5200 50  0001 C CNN
+F 3 "" H 7450 5200 50  0001 C CNN
+	1    7450 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5200 7450 5350
+$Comp
+L SamacSys_Parts:LM2597MX-ADJ_NOPB IC1
+U 1 1 60A3310E
+P 1600 3450
+F 0 "IC1" H 2750 3715 50  0000 C CNN
+F 1 "LM2597MX-ADJ_NOPB" H 2750 3624 50  0000 C CNN
+F 2 "SamacSys_Parts:SOIC127P600X175-8N" H 3750 3550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/LM2597" H 3750 3450 50  0001 L CNN
+F 4 "SIMPLE SWITCHER Power Converter 150 kHz 0.5A Step-Down Voltage Regulator" H 3750 3350 50  0001 L CNN "Description"
+F 5 "1.75" H 3750 3250 50  0001 L CNN "Height"
+F 6 "926-LM2597MXADJNOPB" H 3750 3150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2597MX-ADJ-NOPB?qs=X1J7HmVL2ZEDIgwfzjXNjw%3D%3D" H 3750 3050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 3750 2950 50  0001 L CNN "Manufacturer_Name"
+F 9 "LM2597MX-ADJ/NOPB" H 3750 2850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR08
+U 1 1 60A33B6F
+P 2550 2150
+F 0 "#PWR08" H 2550 2000 50  0001 C CNN
+F 1 "+10V" H 2565 2323 50  0000 C CNN
+F 2 "" H 2550 2150 50  0001 C CNN
+F 3 "" H 2550 2150 50  0001 C CNN
+	1    2550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 60A34042
+P 4300 3650
+F 0 "#PWR013" H 4300 3400 50  0001 C CNN
+F 1 "GND" H 4305 3477 50  0000 C CNN
+F 2 "" H 4300 3650 50  0001 C CNN
+F 3 "" H 4300 3650 50  0001 C CNN
+	1    4300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3650 4300 3650
+$Comp
+L power:+VDC #PWR014
+U 1 1 60A37FAE
+P 4500 3300
+F 0 "#PWR014" H 4500 3200 50  0001 C CNN
+F 1 "+VDC" H 4500 3575 50  0000 C CNN
+F 2 "" H 4500 3300 50  0001 C CNN
+F 3 "" H 4500 3300 50  0001 C CNN
+	1    4500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR03
+U 1 1 60A38ABB
+P 1800 1800
+F 0 "#PWR03" H 1800 1700 50  0001 C CNN
+F 1 "+VDC" H 1800 2075 50  0000 C CNN
+F 2 "" H 1800 1800 50  0001 C CNN
+F 3 "" H 1800 1800 50  0001 C CNN
+	1    1800 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 3300 4500 3550
+Wire Wire Line
+	4500 3550 3900 3550
+$Comp
+L Device:CP C6
+U 1 1 60A4148F
+P 4500 3700
+F 0 "C6" H 4618 3746 50  0000 L CNN
+F 1 "68uF" H 4618 3655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4538 3550 50  0001 C CNN
+F 3 "~" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 3550
+$Comp
+L power:GND #PWR015
+U 1 1 60A41F51
+P 4500 3950
+F 0 "#PWR015" H 4500 3700 50  0001 C CNN
+F 1 "GND" H 4505 3777 50  0000 C CNN
+F 2 "" H 4500 3950 50  0001 C CNN
+F 3 "" H 4500 3950 50  0001 C CNN
+	1    4500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3950 4500 3850
+$Comp
+L SamacSys_Parts:1N5817 D2
+U 1 1 60A466E6
+P 3450 2350
+F 0 "D2" V 3704 2480 50  0000 L CNN
+F 1 "1N5817" V 3795 2480 50  0000 L CNN
+F 2 "SamacSys_Parts:DIOAD1414W86L464D238" H 3900 2350 50  0001 L CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00001625.pdf" H 3900 2250 50  0001 L CNN
+F 4 "1N5817, Schottky Diode,  1A max, 20V, 2-Pin, DO-41" H 3900 2150 50  0001 L CNN "Description"
+F 5 "" H 3900 2050 50  0001 L CNN "Height"
+F 6 "511-1N5817" H 3900 1950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/1N5817?qs=JV7lzlMm3yKNnxZdh%252BSMnw%3D%3D" H 3900 1850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "STMicroelectronics" H 3900 1750 50  0001 L CNN "Manufacturer_Name"
+F 9 "1N5817" H 3900 1650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3450 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 60A4F2AC
+P 3450 3100
+F 0 "#PWR011" H 3450 2850 50  0001 C CNN
+F 1 "GND" H 3455 2927 50  0000 C CNN
+F 2 "" H 3450 3100 50  0001 C CNN
+F 3 "" H 3450 3100 50  0001 C CNN
+	1    3450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3100 3450 2950
+Wire Wire Line
+	3900 3450 3900 2350
+Wire Wire Line
+	3900 2350 3450 2350
+$Comp
+L Device:CP C4
+U 1 1 60A5C026
+P 2550 2600
+F 0 "C4" H 2668 2646 50  0000 L CNN
+F 1 "120uf" H 2668 2555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2588 2450 50  0001 C CNN
+F 3 "~" H 2550 2600 50  0001 C CNN
+	1    2550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 60A5C82C
+P 2550 2950
+F 0 "#PWR09" H 2550 2700 50  0001 C CNN
+F 1 "GND" H 2555 2777 50  0000 C CNN
+F 2 "" H 2550 2950 50  0001 C CNN
+F 3 "" H 2550 2950 50  0001 C CNN
+	1    2550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2950 2550 2750
+Wire Wire Line
+	2550 2450 2550 2350
+$Comp
+L Device:L L1
+U 1 1 60A69F3C
+P 3000 2350
+F 0 "L1" V 3190 2350 50  0000 C CNN
+F 1 "L" V 3099 2350 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L5.3mm_D2.2mm_P10.16mm_Horizontal_Vishay_IM-1" H 3000 2350 50  0001 C CNN
+F 3 "~" H 3000 2350 50  0001 C CNN
+	1    3000 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 2350 2700 2350
+Connection ~ 2550 2350
+Wire Wire Line
+	2550 2350 2550 2150
+Wire Wire Line
+	3150 2350 3450 2350
+Connection ~ 3450 2350
+Wire Wire Line
+	1600 3650 1200 3650
+Wire Wire Line
+	1200 3650 1200 2350
+Wire Wire Line
+	1200 2350 1700 2350
+$Comp
+L Device:R_POT_US 10VSourceAdj1
+U 1 1 60A7D55A
+P 1700 2500
+F 0 "10VSourceAdj1" H 1633 2546 50  0000 R CNN
+F 1 "10k" H 1633 2455 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical" H 1700 2500 50  0001 C CNN
+F 3 "~" H 1700 2500 50  0001 C CNN
+	1    1700 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 2350
+Wire Wire Line
+	1700 2350 2050 2350
+$Comp
+L Device:C C2
+U 1 1 60A7EAAC
+P 2050 2500
+F 0 "C2" H 2165 2546 50  0000 L CNN
+F 1 "33nF" H 2165 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2088 2350 50  0001 C CNN
+F 3 "~" H 2050 2500 50  0001 C CNN
+	1    2050 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2050 2350
+Wire Wire Line
+	2050 2350 2550 2350
+Wire Wire Line
+	1850 2500 1850 2650
+Wire Wire Line
+	1850 2950 1400 2950
+Wire Wire Line
+	1400 2950 1400 3750
+Wire Wire Line
+	1400 3750 1600 3750
+Wire Wire Line
+	2050 2650 1850 2650
+Connection ~ 1850 2650
+Wire Wire Line
+	1850 2650 1850 2950
+$Comp
+L power:GND #PWR04
+U 1 1 60A8A95C
+P 1700 2750
+F 0 "#PWR04" H 1700 2500 50  0001 C CNN
+F 1 "GND" H 1705 2577 50  0000 C CNN
+F 2 "" H 1700 2750 50  0001 C CNN
+F 3 "" H 1700 2750 50  0001 C CNN
+	1    1700 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2750 1700 2650
+$Comp
+L Device:C C1
+U 1 1 60A9130E
+P 900 3700
+F 0 "C1" H 1015 3746 50  0000 L CNN
+F 1 "0.1uF" H 1015 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 938 3550 50  0001 C CNN
+F 3 "~" H 900 3700 50  0001 C CNN
+	1    900  3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60A91718
+P 900 3950
+F 0 "#PWR02" H 900 3700 50  0001 C CNN
+F 1 "GND" H 905 3777 50  0000 C CNN
+F 2 "" H 900 3950 50  0001 C CNN
+F 3 "" H 900 3950 50  0001 C CNN
+	1    900  3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  3950 900  3850
+Wire Wire Line
+	1600 3550 900  3550
+$Comp
+L Device:C C5
+U 1 1 60A9FD75
+P 3900 4100
+F 0 "C5" H 4015 4146 50  0000 L CNN
+F 1 "0.1uF" H 4015 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3938 3950 50  0001 C CNN
+F 3 "~" H 3900 4100 50  0001 C CNN
+	1    3900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 60A9FD7B
+P 3900 4350
+F 0 "#PWR012" H 3900 4100 50  0001 C CNN
+F 1 "GND" H 3905 4177 50  0000 C CNN
+F 2 "" H 3900 4350 50  0001 C CNN
+F 3 "" H 3900 4350 50  0001 C CNN
+	1    3900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4350 3900 4250
+Wire Wire Line
+	3900 3750 3900 3950
+$Comp
+L SamacSys_Parts:1N5817 D1
+U 1 1 60A402DE
+P 1800 1750
+F 0 "D1" V 2054 1880 50  0000 L CNN
+F 1 "1N5817" V 2145 1880 50  0000 L CNN
+F 2 "SamacSys_Parts:DIOAD1414W86L464D238" H 2250 1750 50  0001 L CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00001625.pdf" H 2250 1650 50  0001 L CNN
+F 4 "1N5817, Schottky Diode,  1A max, 20V, 2-Pin, DO-41" H 2250 1550 50  0001 L CNN "Description"
+F 5 "" H 2250 1450 50  0001 L CNN "Height"
+F 6 "511-1N5817" H 2250 1350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/1N5817?qs=JV7lzlMm3yKNnxZdh%252BSMnw%3D%3D" H 2250 1250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "STMicroelectronics" H 2250 1150 50  0001 L CNN "Manufacturer_Name"
+F 9 "1N5817" H 2250 1050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1800 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 1550 1800 1600
+$Comp
+L Connector:TestPoint TP2
+U 1 1 60A81756
+P 2700 2350
+F 0 "TP2" H 2758 2468 50  0000 L CNN
+F 1 "TestPoint" H 2758 2377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 2900 2350 50  0001 C CNN
+F 3 "~" H 2900 2350 50  0001 C CNN
+	1    2700 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 2350
+Wire Wire Line
+	2700 2350 2550 2350
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 60A82E95
+P 7050 2700
+F 0 "J2" H 6968 2917 50  0000 C CNN
+F 1 "Conn_01x02" H 6968 2826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 2700 50  0001 C CNN
+F 3 "~" H 7050 2700 50  0001 C CNN
+	1    7050 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2800 8000 2800
+Wire Wire Line
+	7250 2700 7250 2450
+$Comp
+L power:+VDC #PWR01
+U 1 1 60B7526F
+P 750 3000
+F 0 "#PWR01" H 750 2900 50  0001 C CNN
+F 1 "+VDC" H 750 3275 50  0000 C CNN
+F 2 "" H 750 3000 50  0001 C CNN
+F 3 "" H 750 3000 50  0001 C CNN
+	1    750  3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 60B7595E
+P 750 3250
+F 0 "R1" H 818 3296 50  0000 L CNN
+F 1 "10k" H 818 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 750 3250 50  0001 C CNN
+F 3 "~" H 750 3250 50  0001 C CNN
+	1    750  3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  3150 750  3000
+Wire Wire Line
+	750  3350 750  3450
+Wire Wire Line
+	750  3450 1600 3450
+Wire Wire Line
+	7450 6000 7450 6350
+Wire Wire Line
+	7050 5900 7350 5900
+Wire Wire Line
+	7050 5650 7050 5900
+Wire Wire Line
+	1250 5150 1550 5150
+Wire Wire Line
+	1750 5150 1750 5250
+Wire Wire Line
+	1750 5700 1750 5550
+Wire Wire Line
+	1250 5700 1750 5700
+$Comp
+L Connector:TestPoint TP1
+U 1 1 60B2027F
+P 1550 5150
+F 0 "TP1" H 1608 5268 50  0000 L CNN
+F 1 "TestPoint" H 1608 5177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 1750 5150 50  0001 C CNN
+F 3 "~" H 1750 5150 50  0001 C CNN
+	1    1550 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 5150
+Wire Wire Line
+	1550 5150 1750 5150
+$Comp
+L power:+5V #PWR07
+U 1 1 60B21529
+P 2050 5150
+F 0 "#PWR07" H 2050 5000 50  0001 C CNN
+F 1 "+5V" H 2065 5323 50  0000 C CNN
+F 2 "" H 2050 5150 50  0001 C CNN
+F 3 "" H 2050 5150 50  0001 C CNN
+	1    2050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5150 2050 5150
+Connection ~ 1750 5150
+Wire Wire Line
+	7450 5650 8600 5650
+$Comp
+L power:+5V #PWR0101
+U 1 1 60B6E494
+P 11900 3750
+F 0 "#PWR0101" H 11900 3600 50  0001 C CNN
+F 1 "+5V" H 11915 3923 50  0000 C CNN
+F 2 "" H 11900 3750 50  0001 C CNN
+F 3 "" H 11900 3750 50  0001 C CNN
+	1    11900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11900 4550 11900 4450
+Wire Wire Line
+	11900 3950 11900 3900
+Wire Wire Line
+	11250 3900 11900 3900
+Connection ~ 11900 3900
+Wire Wire Line
+	11900 3900 11900 3750
+$Comp
+L power:GND #PWR0102
+U 1 1 60BB9A5F
+P 1700 950
+F 0 "#PWR0102" H 1700 700 50  0001 C CNN
+F 1 "GND" H 1705 777 50  0000 C CNN
+F 2 "" H 1700 950 50  0001 C CNN
+F 3 "" H 1700 950 50  0001 C CNN
+	1    1700 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 950  1700 850 
+Wire Wire Line
+	1800 850  1800 1150
+Wire Wire Line
+	11250 4100 11350 4100
+Wire Wire Line
+	11350 4100 11350 5450
+$Comp
+L Device:R_POT_US OutAdj1
+U 1 1 607310CD
+P 3000 1150
+F 0 "OutAdj1" H 2933 1196 50  0000 R CNN
+F 1 "1M" H 2933 1105 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical" H 3000 1150 50  0001 C CNN
+F 3 "~" H 3000 1150 50  0001 C CNN
+	1    3000 1150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60C126FC
+P 3000 1450
+F 0 "#PWR0104" H 3000 1200 50  0001 C CNN
+F 1 "GND" H 3005 1277 50  0000 C CNN
+F 2 "" H 3000 1450 50  0001 C CNN
+F 3 "" H 3000 1450 50  0001 C CNN
+	1    3000 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1300 3000 1450
+Wire Wire Line
+	2850 1150 1900 1150
+Wire Wire Line
+	1900 1150 1900 850 
+Wire Wire Line
+	3000 1000 6150 1000
+Wire Wire Line
+	11450 1000 11450 4000
+$Comp
+L SamacSys_Parts:YR1B665RCC RG1
+U 1 1 60AC0D1B
+P 8450 3600
+F 0 "RG1" H 8800 3825 50  0000 C CNN
+F 1 "YR1B665RCC" H 8800 3734 50  0000 C CNN
+F 2 "RESAD1550W60L630D230" H 9000 3650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/YR1B665RCC.pdf" H 9000 3550 50  0001 L CNN
+F 4 "TE Connectivity R Series Axial Through Hole Fixed Resistor 665 +/-0.1% 0.25W +/-15ppm/C" H 9000 3450 50  0001 L CNN "Description"
+F 5 "" H 9000 3350 50  0001 L CNN "Height"
+F 6 "279-YR1B665RCC" H 9000 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-YR1B665RCC" H 9000 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 9000 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "YR1B665RCC" H 9000 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3600 9650 3600
+Wire Wire Line
+	9650 3600 9650 4000
+Wire Wire Line
+	9650 4000 10150 4000
+Wire Wire Line
+	10150 4100 8450 4100
+Wire Wire Line
+	8450 4100 8450 3600
+Wire Wire Line
+	1800 1800 1800 1750
+Wire Wire Line
+	10500 5450 10500 5650
+Wire Wire Line
+	11350 5450 10500 5450
+Wire Wire Line
+	10500 5650 10650 5650
+Wire Wire Line
+	8200 6350 10500 6350
+Connection ~ 10500 5650
+Wire Wire Line
+	10500 6350 10500 5650
+Wire Wire Line
+	10200 5650 10500 5650
+Wire Wire Line
+	10300 5550 10300 5200
+Wire Wire Line
+	10200 5550 10300 5550
+$Comp
+L power:+5V #PWR0103
+U 1 1 60BD1871
+P 10300 5200
+F 0 "#PWR0103" H 10300 5050 50  0001 C CNN
+F 1 "+5V" H 10315 5373 50  0000 C CNN
+F 2 "" H 10300 5200 50  0001 C CNN
+F 3 "" H 10300 5200 50  0001 C CNN
+	1    10300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 5650 10850 5650
+$Comp
+L Device:R_Small_US R5
+U 1 1 60759FBE
+P 10750 5650
+F 0 "R5" H 10818 5696 50  0000 L CNN
+F 1 "10M" H 10818 5605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10750 5650 50  0001 C CNN
+F 3 "~" H 10750 5650 50  0001 C CNN
+	1    10750 5650
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 10200 5750
+$Comp
+L SamacSys_Parts:TL071CP IC4
+U 1 1 6074FBB3
+P 8600 5450
+F 0 "IC4" H 9400 5715 50  0000 C CNN
+F 1 "TL071CP" H 9400 5624 50  0000 C CNN
+F 2 "SamacSys_Parts:DIP794W53P254L959H508Q8N" H 10050 5550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071a.pdf" H 10050 5450 50  0001 L CNN
+F 4 "Low-Noise JFET-Input General-Purpose Operational Amplifier" H 10050 5350 50  0001 L CNN "Description"
+F 5 "5.08" H 10050 5250 50  0001 L CNN "Height"
+F 6 "595-TL071CP" H 10050 5150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TL071CP/?qs=3FVjRv9mUZ%2FN1XJT5coqUQ%3D%3D" H 10050 5050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 10050 4950 50  0001 L CNN "Manufacturer_Name"
+F 9 "TL071CP" H 10050 4850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x05 J3
+U 1 1 60AE762E
+P 1900 650
+F 0 "J3" V 1864 362 50  0000 R CNN
+F 1 "Screw_Terminal_01x05" V 1773 362 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-5_1x05_P5.00mm_Horizontal" H 1900 650 50  0001 C CNN
+F 3 "~" H 1900 650 50  0001 C CNN
+	1    1900 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 60B1A2EA
+P 5100 6250
+F 0 "A1" H 5100 5161 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5100 5070 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5100 6250 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5100 6250 50  0001 C CNN
+	1    5100 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR021
+U 1 1 60B2B3D1
+P 5000 5050
+F 0 "#PWR021" H 5000 4900 50  0001 C CNN
+F 1 "+10V" H 5015 5223 50  0000 C CNN
+F 2 "" H 5000 5050 50  0001 C CNN
+F 3 "" H 5000 5050 50  0001 C CNN
+	1    5000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5250 5000 5050
+$Comp
+L power:GND #PWR022
+U 1 1 60B2EAF0
+P 5100 7600
+F 0 "#PWR022" H 5100 7350 50  0001 C CNN
+F 1 "GND" H 5105 7427 50  0000 C CNN
+F 2 "" H 5100 7600 50  0001 C CNN
+F 3 "" H 5100 7600 50  0001 C CNN
+	1    5100 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 7250 5100 7450
+Wire Wire Line
+	5200 7250 5200 7450
+Wire Wire Line
+	5200 7450 5100 7450
+Connection ~ 5100 7450
+Wire Wire Line
+	5100 7450 5100 7600
+Wire Wire Line
+	6900 7200 10500 7200
+Wire Wire Line
+	10500 7200 10500 6350
+Connection ~ 10500 6350
+Wire Wire Line
+	6900 7200 6900 6350
+Wire Wire Line
+	6900 6350 5600 6350
+Wire Wire Line
+	5600 6250 6150 6250
+Wire Wire Line
+	6150 6250 6150 1000
+Connection ~ 6150 1000
+Wire Wire Line
+	6150 1000 11450 1000
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 60B4E038
+P 3750 5850
+F 0 "J1" H 3668 6067 50  0000 C CNN
+F 1 "Conn_01x02" H 3668 5976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3750 5850 50  0001 C CNN
+F 3 "~" H 3750 5850 50  0001 C CNN
+	1    3750 5850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5950 4100 5950
+$Comp
+L power:GND #PWR010
+U 1 1 60B57AAA
+P 4100 6300
+F 0 "#PWR010" H 4100 6050 50  0001 C CNN
+F 1 "GND" H 4105 6127 50  0000 C CNN
+F 2 "" H 4100 6300 50  0001 C CNN
+F 3 "" H 4100 6300 50  0001 C CNN
+	1    4100 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 6300 4100 6150
+$Comp
+L Device:R_Small_US R4
+U 1 1 60B57AB1
+P 4100 6050
+F 0 "R4" H 4168 6096 50  0000 L CNN
+F 1 "20k" H 4168 6005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 6050 50  0001 C CNN
+F 3 "~" H 4100 6050 50  0001 C CNN
+	1    4100 6050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 5950
+Wire Wire Line
+	4100 5950 4600 5950
+Wire Wire Line
+	5300 5250 5300 4700
+Wire Wire Line
+	5300 4700 3950 4700
+Wire Wire Line
+	3950 4700 3950 5850
+$Comp
+L SamacSys_Parts:SP3220EBEY-L_TR IC5
+U 1 1 60AC8723
+P 1800 6300
+F 0 "IC5" H 2550 6565 50  0000 C CNN
+F 1 "SP3220EBEY-L_TR" H 2550 6474 50  0000 C CNN
+F 2 "SOP65P640X120-16N" H 3150 6400 50  0001 L CNN
+F 3 "https://www.maxlinear.com/ds/sp3220e_sp3220eb_sp3220eu.pdf" H 3150 6300 50  0001 L CNN
+F 4 "RS-232 Interface IC 3V-5.5V RS-232 1-DRV/1-RCV LOW PWR" H 3150 6200 50  0001 L CNN "Description"
+F 5 "1.2" H 3150 6100 50  0001 L CNN "Height"
+F 6 "701-SP3220EBEY-L/TR" H 3150 6000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/MaxLinear/SP3220EBEY-L-TR?qs=Hy8V1%2FADhVIOThvtoqwTPA%3D%3D" H 3150 5900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "MaxLinear, Inc." H 3150 5800 50  0001 L CNN "Manufacturer_Name"
+F 9 "SP3220EBEY-L/TR" H 3150 5700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1800 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6700 3650 6900
+Wire Wire Line
+	3300 6500 3650 6500
+Wire Wire Line
+	3650 6500 3650 6700
+Connection ~ 3650 6700
+$Comp
+L Device:CP C9
+U 1 1 60ADB335
+P 950 6500
+F 0 "C9" H 1068 6546 50  0000 L CNN
+F 1 "0.22uF" H 1068 6455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 988 6350 50  0001 C CNN
+F 3 "~" H 950 6500 50  0001 C CNN
+	1    950  6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6800 4400 6800
+Wire Wire Line
+	4400 6800 4400 5750
+Wire Wire Line
+	4400 5750 4600 5750
+Wire Wire Line
+	4600 5650 4350 5650
+Wire Wire Line
+	4350 5650 4350 7250
+Wire Wire Line
+	4350 7250 1650 7250
+Wire Wire Line
+	1650 7250 1650 7000
+Wire Wire Line
+	1650 7000 1800 7000
+$Comp
+L Device:CP C10
+U 1 1 60AF8ACD
+P 950 6900
+F 0 "C10" H 1068 6946 50  0000 L CNN
+F 1 "0.22uF" H 1068 6855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 988 6750 50  0001 C CNN
+F 3 "~" H 950 6900 50  0001 C CNN
+	1    950  6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C8
+U 1 1 60AF8D7C
+P 700 6700
+F 0 "C8" H 818 6746 50  0000 L CNN
+F 1 "0.22uF" H 818 6655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 738 6550 50  0001 C CNN
+F 3 "~" H 700 6700 50  0001 C CNN
+	1    700  6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6400 1050 6400
+Wire Wire Line
+	1050 6400 1050 6350
+Wire Wire Line
+	1050 6350 950  6350
+Wire Wire Line
+	1800 6600 1050 6600
+Wire Wire Line
+	1050 6600 1050 6650
+Wire Wire Line
+	1050 6650 950  6650
+Wire Wire Line
+	950  6750 1450 6750
+Wire Wire Line
+	1450 6750 1450 6700
+Wire Wire Line
+	1450 6700 1800 6700
+Wire Wire Line
+	1800 6800 1350 6800
+Wire Wire Line
+	1350 6800 1350 7100
+Wire Wire Line
+	1350 7100 950  7100
+Wire Wire Line
+	950  7100 950  7050
+Wire Wire Line
+	1800 6500 1400 6500
+Wire Wire Line
+	1400 6500 1400 6200
+Wire Wire Line
+	1400 6200 700  6200
+Wire Wire Line
+	700  6200 700  6550
+Wire Wire Line
+	700  7350 1500 7350
+Wire Wire Line
+	1500 7350 1500 6900
+Wire Wire Line
+	1500 6900 1800 6900
+Wire Wire Line
+	3300 6600 3450 6600
+Wire Wire Line
+	3450 6600 3450 4600
+Wire Wire Line
+	5000 4600 5000 900 
+Wire Wire Line
+	5000 900  2000 900 
+Wire Wire Line
+	2000 900  2000 850 
+Wire Wire Line
+	3450 4600 5000 4600
+Wire Wire Line
+	2100 850  5050 850 
+Wire Wire Line
+	5050 850  5050 4650
+Wire Wire Line
+	5050 4650 3500 4650
+Wire Wire Line
+	3500 4650 3500 7000
+Wire Wire Line
+	3500 7000 3300 7000
+$Comp
+L power:GND #PWR027
+U 1 1 60AC93BF
+P 3650 6900
+F 0 "#PWR027" H 3650 6650 50  0001 C CNN
+F 1 "GND" H 3655 6727 50  0000 C CNN
+F 2 "" H 3650 6900 50  0001 C CNN
+F 3 "" H 3650 6900 50  0001 C CNN
+	1    3650 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 60B4A9A0
+P 1550 6200
+F 0 "#PWR023" H 1550 5950 50  0001 C CNN
+F 1 "GND" H 1555 6027 50  0000 C CNN
+F 2 "" H 1550 6200 50  0001 C CNN
+F 3 "" H 1550 6200 50  0001 C CNN
+	1    1550 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6200 1550 6100
+Wire Wire Line
+	1550 6100 1800 6100
+Wire Wire Line
+	1800 6100 1800 6300
+Wire Wire Line
+	3300 6400 3400 6400
+Wire Wire Line
+	3400 6400 3400 6300
+Wire Wire Line
+	3400 6300 3300 6300
+Wire Wire Line
+	700  6850 700  7350
+$Comp
+L Device:CP C11
+U 1 1 60B63EF2
+P 3800 6550
+F 0 "C11" H 3918 6596 50  0000 L CNN
+F 1 "0.1uF" H 3918 6505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3838 6400 50  0001 C CNN
+F 3 "~" H 3800 6550 50  0001 C CNN
+	1    3800 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6400 3400 6400
+Connection ~ 3400 6400
+Wire Wire Line
+	3800 6700 3650 6700
+Wire Wire Line
+	3400 6300 3400 4700
+Wire Wire Line
+	3400 4700 3950 4700
+Connection ~ 3400 6300
+Connection ~ 3950 4700
+NoConn ~ 3300 6700
+NoConn ~ 3300 6900
+$Comp
+L SamacSys_Parts:NTCSP103JF103FT1S RT1
+U 1 1 60AE9AC1
+P 6100 8200
+F 0 "RT1" H 6728 8196 50  0000 L CNN
+F 1 "NTCSP103JF103FT1S" H 6728 8105 50  0000 L CNN
+F 2 "THRMC1005X55N" H 6750 8300 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/503022/tpd_automotive_ntc-thermistor_ntcsp_en.pdf?ref_disty=digikey" H 6750 8200 50  0001 L CNN
+F 4 "NTC Thermistors 0402 10Kohm 1%, AEC-Q200 EPOXY" H 6750 8100 50  0001 L CNN "Description"
+F 5 "0.55" H 6750 8000 50  0001 L CNN "Height"
+F 6 "810-NTCSP103JF103FTS" H 6750 7900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/TDK/NTCSP103JF103FT1S?qs=sPbYRqrBIVkfbmp3vKGxaA%3D%3D" H 6750 7800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TDK" H 6750 7700 50  0001 L CNN "Manufacturer_Name"
+F 9 "NTCSP103JF103FT1S" H 6750 7600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6100 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 60AEB0C3
+P 6050 8450
+F 0 "#PWR028" H 6050 8200 50  0001 C CNN
+F 1 "GND" H 6055 8277 50  0000 C CNN
+F 2 "" H 6050 8450 50  0001 C CNN
+F 3 "" H 6050 8450 50  0001 C CNN
+	1    6050 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R6
+U 1 1 60AEB0CA
+P 6100 7850
+F 0 "R6" H 6168 7896 50  0000 L CNN
+F 1 "10k" H 6168 7805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6100 7850 50  0001 C CNN
+F 3 "~" H 6100 7850 50  0001 C CNN
+	1    6100 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 8450 6050 8300
+Wire Wire Line
+	6050 8300 6100 8300
+Wire Wire Line
+	6100 8200 6100 7950
+Wire Wire Line
+	6100 4700 5300 4700
+Connection ~ 5300 4700
+Wire Wire Line
+	6100 7750 6100 4700
+$EndSCHEMATC
