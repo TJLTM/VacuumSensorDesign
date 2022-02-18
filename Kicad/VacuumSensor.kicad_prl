@@ -37,6 +37,7 @@
       9,
       10,
       11,
+      12,
       13,
       14,
       15,
@@ -65,7 +66,7 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "AMS-Vacuum-Sensor.kicad_prl",
+    "filename": "VacuumSensor.kicad_prl",
     "version": 3
   },
   "project": {
